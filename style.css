@@ -1,0 +1,84 @@
+
+
+.keyboard table {
+    text-align: center;
+}
+
+.keyboard tr {
+    display: block;
+    padding: 3px;
+}
+
+.keyboard td 
+{
+    padding: 3px;
+    background-color: lightgrey;
+    display: inline-block;
+    user-select: none;
+}
+
+.keyboard td:hover 
+{
+    background-color: rgb(32, 166, 175);
+}
+table
+{
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td.Correct {
+    background-color: green;
+    color: whitesmoke;
+}
+.keyboard td.Correct:hover 
+{
+    background-color: rgb(0, 105, 0);
+}
+td.Present {
+    background-color: orange;
+    color: whitesmoke;
+}
+.keyboard td.Present:hover 
+{
+    background-color: rgb(255, 123, 0);
+}
+td.Nothing {
+    background-color: dimgray;
+    color: whitesmoke;
+}
+.keyboard td.Nothing:hover 
+{
+    background-color: dimgray;
+}
+
+tr.buttons td {
+    padding: 15px;
+    border: 0px;
+    background-color: #fff;
+}
+tr.buttons td:hover {
+    padding: 15px;
+    border: 0px;
+    background-color: #fff;
+}
+
+h1
+{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+<head>
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Wordle</h1>
+    <div>
+        <table id="table">
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+    </div>
+    
+    <div>
+        <table class="keyboard">
+            <tr><td id="Q" onclick="letterPress(this.innerHTML);">Q</td><td id="W" onclick="letterPress(this.innerHTML);">W</td><td id="E" onclick="letterPress(this.innerHTML);">E</td><td id="R" onclick="letterPress(this.innerHTML);">R</td><td id="T" onclick="letterPress(this.innerHTML);">T</td><td id="Y" onclick="letterPress(this.innerHTML);">Y</td><td id="U" onclick="letterPress(this.innerHTML);">U</td><td id="I" onclick="letterPress(this.innerHTML);">I</td><td id="O" onclick="letterPress(this.innerHTML);">O</td><td id="P" onclick="letterPress(this.innerHTML);">P</td></tr>
+            <tr><td id="A" onclick="letterPress(this.innerHTML);">A</td><td id="S" onclick="letterPress(this.innerHTML);">S</td><td id="D" onclick="letterPress(this.innerHTML);">D</td><td id="F" onclick="letterPress(this.innerHTML);">F</td><td id="G" onclick="letterPress(this.innerHTML);">G</td><td id="H" onclick="letterPress(this.innerHTML);">H</td><td id="J" onclick="letterPress(this.innerHTML);">J</td><td id="K" onclick="letterPress(this.innerHTML);">K</td><td id="L" onclick="letterPress(this.innerHTML);">L</td></tr>
+            <tr><td id="Z" onclick="letterPress(this.innerHTML);">Z</td><td id="X" onclick="letterPress(this.innerHTML);">X</td><td id="C" onclick="letterPress(this.innerHTML);">C</td><td id="V" onclick="letterPress(this.innerHTML);">V</td><td id="B" onclick="letterPress(this.innerHTML);">B</td><td id="N" onclick="letterPress(this.innerHTML);">N</td><td id="M" onclick="letterPress(this.innerHTML);">M</td></tr>
+            <tr class="buttons"><td><button type="button" onclick="backspaceLetter();">Backspace</button></td><td><button type="button" onclick="clearWord()">Clear</button></td> <td><button type="button" onclick="submitWord()">Submit</button></td></tr>
+            <tr class="buttons"><td><button type="button" onclick="newWord()">New Word</button></td></tr>
+        </table>
+    </div>
+</body>
