@@ -54,6 +54,8 @@ function updateRow()
 
 function    clearWord()
 {
+    if (solved)
+        return ;
     input = "";
     for (var i = 0; i < 5; i++)
     {
@@ -64,6 +66,8 @@ function    clearWord()
 
 function    backspaceLetter()
 {
+    if (solved)
+        return ;
     if (input.length > 0)
         input = input.substring(0, input.length - 1);
     updateRow();
@@ -100,7 +104,10 @@ function    submitWord()
                 document.getElementById(input[c]).className = "Nothing";
         }
     }
-    currentRow += 1;
+    if (currentRow < 5)
+        currentRow += 1;
+    else
+        solved = true;
     input = "";
     if (correctLetters == 5)
         solved = true;
